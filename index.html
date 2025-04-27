@@ -18,7 +18,8 @@
         .invitation {
             width: 100%;
             max-width: 600px;
-            background-color: #2e7d32; /* Green background */
+            background: url('https://raw.githubusercontent.com/pskbmohan/House-invitation/refs/heads/main/banana-leaf.png') repeat;
+            background-color: #99312e; /* Maroon background color */
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -49,7 +50,7 @@
         .header h2 {
             font-family: 'Dancing Script', cursive;
             font-size: 1.5em;
-            color: #ffab91;
+            color: #ffab91; /* Light orange for consistency */
             margin: 10px 0;
         }
         .content {
@@ -79,27 +80,27 @@
         }
         .leaves {
             position: absolute;
-            width: 120px; /* Increased size for visibility */
+            width: 120px;
             height: 200px;
             background: url('https://raw.githubusercontent.com/pskbmohan/House-invitation/refs/heads/main/banana-leaf.png') no-repeat center;
             background-size: contain;
             opacity: 1;
-            z-index: 1; /* Ensure it’s above the background */
+            z-index: 1;
         }
         .left-leaf {
-            left: 0; /* Adjusted position */
+            left: 0;
             top: 50%;
-            transform: translateY(-50%) rotate(15deg); /* Slight rotation for natural look */
+            transform: translateY(-50%) rotate(15deg);
         }
         .right-leaf {
-            right: 0; /* Adjusted position */
+            right: 0;
             top: 50%;
             transform: translateY(-50%) rotate(-15deg);
         }
         .footer {
             padding: 10px;
             font-size: 0.9em;
-            color: #ffab91;
+            color: #ffab91; /* Light orange for consistency */
             background: rgba(0, 0, 0, 0.2);
         }
         @media (max-width: 600px) {
@@ -113,7 +114,7 @@
                 font-size: 1.2em;
             }
             .leaves {
-                width: 80px; /* Smaller size for mobile */
+                width: 80px;
                 height: 150px;
             }
         }
