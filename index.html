@@ -18,7 +18,7 @@
         .invitation {
             width: 100%;
             max-width: 600px;
-            background-color: #2e7d32; /* Green background from the image */
+            background-color: #2e7d32; /* Green background */
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -30,7 +30,7 @@
             width: 100%;
             height: 60px;
             background: url('https://www.transparenttextures.com/patterns/flowers.png') repeat-x;
-            background-color: #ffab91; /* Light orange to complement the floral pattern */
+            background-color: #ffab91; /* Light orange for floral pattern */
             position: absolute;
             top: 0;
             left: 0;
@@ -49,7 +49,7 @@
         .header h2 {
             font-family: 'Dancing Script', cursive;
             font-size: 1.5em;
-            color: #ffab91; /* Match the garland color */
+            color: #ffab91;
             margin: 10px 0;
         }
         .content {
@@ -79,26 +79,27 @@
         }
         .leaves {
             position: absolute;
-            width: 80px;
-            height: 150px;
-            background: url('banana-leaf.png') no-repeat center;
+            width: 120px; /* Increased size for visibility */
+            height: 200px;
+            background: url('https://raw.githubusercontent.com/pskbmohan/House-invitation/refs/heads/main/banana-leaf.png') no-repeat center;
             background-size: contain;
-            opacity: 1; /* Ensure the leaf is fully visible */
+            opacity: 1;
+            z-index: 1; /* Ensure it’s above the background */
         }
         .left-leaf {
-            left: 10px;
+            left: 0; /* Adjusted position */
             top: 50%;
-            transform: translateY(-50%) rotate(10deg);
+            transform: translateY(-50%) rotate(15deg); /* Slight rotation for natural look */
         }
         .right-leaf {
-            right: 10px;
+            right: 0; /* Adjusted position */
             top: 50%;
-            transform: translateY(-50%) rotate(-10deg);
+            transform: translateY(-50%) rotate(-15deg);
         }
         .footer {
             padding: 10px;
             font-size: 0.9em;
-            color: #ffab91; /* Match the garland color */
+            color: #ffab91;
             background: rgba(0, 0, 0, 0.2);
         }
         @media (max-width: 600px) {
@@ -112,7 +113,8 @@
                 font-size: 1.2em;
             }
             .leaves {
-                display: none;
+                width: 80px; /* Smaller size for mobile */
+                height: 150px;
             }
         }
     </style>
