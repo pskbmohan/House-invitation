@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House Warming Invitation</title>
+    <title>Griha Pravesh Invitation</title>
     <style>
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background-color: #fff;
+            background-color: #f0f0f0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,7 +18,7 @@
         .invitation {
             width: 100%;
             max-width: 600px;
-            background-color: #d32f2f; /* Red background from the image */
+            background-color: #2e7d32; /* Green background from the image */
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -28,28 +28,36 @@
         }
         .garland {
             width: 100%;
-            height: 50px;
+            height: 60px;
             background: url('https://www.transparenttextures.com/patterns/floral-pattern.png') repeat-x;
             background-color: #ffca28; /* Yellow floral garland */
             position: absolute;
             top: 0;
             left: 0;
         }
-        .content {
-            padding: 60px 20px 20px;
+        .header {
+            padding: 80px 20px 20px;
             position: relative;
         }
-        .content h1 {
+        .header h1 {
             font-family: 'Playfair Display', serif;
             font-size: 2.5em;
             margin: 0 0 10px;
             color: #fff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        .content h2 {
+        .header h2 {
             font-family: 'Dancing Script', cursive;
             font-size: 1.5em;
             color: #ffca28;
+            margin: 10px 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content p {
+            font-size: 1em;
+            line-height: 1.6;
             margin: 10px 0;
         }
         .details {
@@ -57,19 +65,17 @@
             padding: 20px;
             border-radius: 10px;
             margin: 20px 0;
-            color: #fff;
         }
         .details p {
             margin: 10px 0;
             font-size: 1em;
-            line-height: 1.5;
         }
-        .house-image {
+        .cow-calf {
             width: 100%;
+            max-width: 300px;
             height: auto;
-            margin: 20px 0;
-            border: 5px solid #fff;
-            border-radius: 10px;
+            margin: 20px auto;
+            display: block;
         }
         .leaves {
             position: absolute;
@@ -98,10 +104,10 @@
             .invitation {
                 width: 100%;
             }
-            .content h1 {
+            .header h1 {
                 font-size: 2em;
             }
-            .content h2 {
+            .header h2 {
                 font-size: 1.2em;
             }
             .leaves {
@@ -114,23 +120,25 @@
 <body>
     <div class="invitation">
         <div class="garland"></div>
-        <div class="content">
+        <div class="header">
             <div class="leaves left-leaf"></div>
             <div class="leaves right-leaf"></div>
-            <h1>[Your Family Name]'s House Warming Invitation</h1>
-            <h2>You're Cordially Invited!</h2>
-            <p>We request you to come along with your family for this auspicious ceremony and wish us well.</p>
+            <h1>Griha Pravesh</h1>
+            <h2>[Your Family Name]</h2>
+        </div>
+        <div class="content">
+            <p>Cordially invite you & your family to grace the occasion of Griha Pravesh of our New Home</p>
             <div class="details">
-                <p><strong>Date:</strong> Saturday, 10th May 2025 at 7 AM</p>
-                <p><strong>Venue:</strong> 5th Floor, [Apartment Name], Near Water Tank, [Area], [City], [Zip Code]</p>
-                <p><strong>Hosts:</strong> [Your Name] - +91 [Your Phone 1]</p>
-                <p><strong>Contact:</strong> [Co-Host Name] - +91 [Your Phone 2]</p>
+                <p><strong>Date:</strong> Saturday, 10th May 2025</p>
+                <p><strong>Time:</strong> 10:30 AM Onwards</p>
+                <p><strong>Venue:</strong> [Your Villa Name], Near [Landmark], [City], [Zip Code]</p>
+                <p><strong>RSVP:</strong> [Your Name] - [Your Email] or Ph: +91 [Your Phone]</p>
             </div>
-            <img src="https://via.placeholder.com/500x300" alt="Modern House" class="house-image">
+            <img src="cow-calf.png" alt="Cow and Calf Drinking Milk" class="cow-calf">
             <p>Join us for a traditional puja followed by a celebration!</p>
         </div>
         <div class="footer">
-            <p>RSVP by 5th May 2025 | Contact: +91 [Your Phone]</p>
+            <p>We look forward to your blessings!</p>
         </div>
     </div>
 </body>
